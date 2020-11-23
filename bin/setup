@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+
+if [[ "$OSTYPE" == *"darwin"* ]]; then
+  gem install docker-sync
+  docker-sync start
+  docker-sync sync
+  docker-compose up --detach
+fi

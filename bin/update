@@ -1,0 +1,7 @@
+#!/bin/bash
+set -e
+
+docker-sync stop
+docker-sync clean
+./bin/bootstrap
+./bin/setup

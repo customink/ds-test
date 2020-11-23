@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  dstest:
+    volumes:
+      - dstest-sync:/var/task:nocopy
+volumes:
+  dstest-sync:
+    external: true
